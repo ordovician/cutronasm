@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>src</string>
+	</array>
+	<key>name</key>
+	<string>Calcutron-33 Assembly</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\b(BEQ|ADD|ADDI|SUB|SHFT|LOAD|MOVE|STOR|JMP|BGT|DEC|INC|SUBI|BRA|BLT|CLR|COPY|CALL|NOP|HLT|INP|OUT|DAT)\b</string>
+			<key>name</key>
+			<string>keyword.instruction.cutronasm</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>//</string>
+			<key>end</key>
+			<string>$\n?</string>
+			<key>name</key>
+			<string>comment.line.doubleslash.cutronasm</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>;</string>
+			<key>end</key>
+			<string>$\n?</string>
+			<key>name</key>
+			<string>comment.line.semicolon.cutronasm</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(x[0-9])\b</string>
+			<key>name</key>
+			<string>variable.language.registers.cutronasm</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b([0-9]+)\b</string>
+			<key>name</key>
+			<string>constant.language.cutronasm</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(\w)+:</string>
+			<key>name</key>
+			<string>entity.name.function.cutronasm</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.cutronasm</string>
+	<key>uuid</key>
+	<string>E81728A7-5996-4665-A4C7-50335F9A6920</string>
+</dict>
+</plist>
