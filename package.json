@@ -3,6 +3,7 @@
   "displayName": "Calcutron-33",
   "description": "Calcutron-33 assembly code support",
   "version": "0.0.1",
+  "repository":"https://github.com/ordovician/cutronasm",
   "engines": {
     "vscode": "^1.73.0"
   },
