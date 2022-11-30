@@ -12,7 +12,7 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>\b(BEQ|ADD|ADDI|SUB|SHFT|LOAD|MOVE|STOR|JMP|BGT|DEC|INC|SUBI|BRA|BLT|CLR|COPY|CALL|NOP|HLT|INP|OUT|DAT)\b</string>
+			<string>\b(BEQ|ADD|ADDI|SUB|LSH|RSH|LOAD|MOVE|STOR|JMP|BGT|DEC|INC|SUBI|BRA|BLT|CLR|COPY|CALL|NOP|HLT|INP|OUT|DAT|STR)\b</string>
 			<key>name</key>
 			<string>keyword.instruction.cutronasm</string>
 		</dict>
